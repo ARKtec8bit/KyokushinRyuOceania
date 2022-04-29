@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kyokushin Ryu Oceania</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico?v=2">
@@ -22,9 +23,41 @@
                 <a href="#"><span></span>Find a Dojo</a>
             </div>
         </div>
-
-
     </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT KYOKUSHIN RYU</a></li>
+                <li><a href="#">ABOUT SHIHAN PETER LOWL</a></li>
+                <li><a href="#">ABOUT INSTRUCTORS</a></li>
+                <li><a href="#">DOJO INFORMATION</a></li>
+                <li><a href="#">IMAGES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-btn">
+        <img src="images/menu.png" alt="" id="menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menu-btn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+
+        sidenav.style.right = "-160px";
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-160px") {
+                sidenav.style.right = "0";
+            }
+            else {
+                sidenav.style.right = "-160px";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
