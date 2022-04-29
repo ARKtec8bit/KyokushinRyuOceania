@@ -124,6 +124,10 @@ nav ul li a {
         font-size: 40px;
     }
 
+    .banner-text p {
+        font-size: 20px;
+    }
+
     .banner-btn a {
         display: block;
         margin: 10px auto;
